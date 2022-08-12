@@ -91,3 +91,17 @@ exercises.c:59:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 b0b196c
+Fri 12 Aug 2022 12:55:04 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:58:12: error: expected expression before ‘Persona’
+   58 |    return *Persona;
+      |            ^~~~~~~
+exercises.c:59:1: error: control reaches end of non-void function [-Werror=return-type]
+   59 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e48fd9f
