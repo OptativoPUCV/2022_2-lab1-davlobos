@@ -123,3 +123,16 @@ exercises.c:39:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 0179cca
+Fri 12 Aug 2022 12:56:20 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:102:8: error: invalid operands to binary + (have ‘Vector **’ and ‘Vector **’)
+  102 |   *c=&a+&b;
+      |      ~~^~~
+      |      |  |
+      |      |  Vector **
+      |      Vector **
+Compilation failed
+ce41713
