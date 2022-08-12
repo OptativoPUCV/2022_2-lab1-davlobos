@@ -335,3 +335,14 @@ Fri 12 Aug 2022 01:16:51 PM UTC:
  tests:  2|5
 total_score: 20/70
 c49e895
+Fri 12 Aug 2022 01:19:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:11: error: returning ‘char’ from a function with return type ‘Persona *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   61 |    return *persona;
+      |           ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0dad485
