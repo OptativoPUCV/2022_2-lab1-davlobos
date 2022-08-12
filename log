@@ -245,3 +245,23 @@ Fri 12 Aug 2022 01:08:30 PM UTC:
  tests:  1|6
 total_score: 10/70
 3a8900f
+Fri 12 Aug 2022 01:10:11 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:3: error: ‘c’ undeclared (first use in this function)
+   40 |   c=n-m
+      |   ^
+exercises.c:40:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:40:8: error: expected ‘;’ before ‘int’
+   40 |   c=n-m
+      |        ^
+      |        ;
+   41 |   int *b=(a+c);
+      |   ~~~   
+exercises.c:42:15: error: ‘b’ undeclared (first use in this function)
+   42 |   *suma=sumaN(b,m);
+      |               ^
+Compilation failed
+d448822
