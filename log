@@ -58,3 +58,22 @@ exercises.c:39:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 a81c1c9
+Fri 12 Aug 2022 12:54:08 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:41:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   41 |   return suma;
+      |          ^~~~
+exercises.c:39:6: note: declared here
+   39 | void sumaNultimos(int a[], int n, int m, int * suma) {
+      |      ^~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+Fri 12 Aug 2022 12:54:30 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  3|5
+total_score: 20/70
+315442e
