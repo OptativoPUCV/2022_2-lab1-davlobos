@@ -442,3 +442,14 @@ exercises.c:65:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 ceaf2ce
+Fri 12 Aug 2022 05:02:28 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:10: error: function returns address of local variable [-Werror=return-local-addr]
+   64 |   return human;
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+4990437
