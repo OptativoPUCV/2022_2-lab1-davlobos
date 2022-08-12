@@ -2,3 +2,16 @@ Fri 12 Aug 2022 12:17:31 PM UTC:
  tests:  0|7
 total_score: 0/70
 d73c9a3
+Fri 12 Aug 2022 12:35:49 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘suma’:
+exercises.c:15:11: error: expected ‘;’ before ‘}’ token
+   15 |     *c=a+b
+      |           ^
+      |           ;
+   16 | }
+      | ~          
+Compilation failed
+a6d2acc
