@@ -292,3 +292,13 @@ exercises.c:86:6: error: incompatible types when assigning to type ‘Vector’ 
       |      ^
 Compilation failed
 f9fb47d
+Fri 12 Aug 2022 01:15:05 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:87:6: error: expected expression before ‘;’ token
+   87 |   *v=;
+      |      ^
+Compilation failed
+066f3b7
