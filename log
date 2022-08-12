@@ -265,3 +265,14 @@ exercises.c:42:15: error: ‘b’ undeclared (first use in this function)
       |               ^
 Compilation failed
 d448822
+Fri 12 Aug 2022 01:10:18 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:3: error: ‘c’ undeclared (first use in this function)
+   40 |   c=n-m;
+      |   ^
+exercises.c:40:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c2bcc23
