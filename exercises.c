@@ -23,7 +23,6 @@ int sumaN(int a[], int N) {
     int tot = 0;
 
     for(i = 0; i < N; i++) {
-      a[i]=i;
       tot += a[i];
     }
 
@@ -38,7 +37,9 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-
+  for(int i=0;i<n)
+  
+  return suma;
 }
 
 /*
@@ -56,7 +57,7 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   return NULL;
+   return 0;
 }
 
 /*
