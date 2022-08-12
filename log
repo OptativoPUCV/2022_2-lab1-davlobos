@@ -390,3 +390,14 @@ exercises.c:61:10: error: returning ‘char’ from a function with return type 
 cc1: all warnings being treated as errors
 Compilation failed
 3b36da4
+Fri 12 Aug 2022 01:22:45 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:10: error: returning ‘int’ from a function with return type ‘Persona *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   61 |   return *a;
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+9310f33
