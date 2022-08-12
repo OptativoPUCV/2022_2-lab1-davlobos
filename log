@@ -570,3 +570,22 @@ exercises.c:66:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 2d8fd94
+Fri 12 Aug 2022 05:14:29 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:14: error: ‘h[0]’ is a pointer; did you mean to use ‘->’?
+   61 |   strcpy(h[0].nombre,nombre);
+      |              ^
+      |              ->
+exercises.c:62:14: error: ‘h[0]’ is a pointer; did you mean to use ‘->’?
+   62 |   strcpy(h[0].rut,rut);
+      |              ^
+      |              ->
+exercises.c:63:7: error: ‘h[0]’ is a pointer; did you mean to use ‘->’?
+   63 |   h[0].edad=edad;
+      |       ^
+      |       ->
+Compilation failed
+cc99741
