@@ -425,3 +425,20 @@ Fri 12 Aug 2022 01:29:21 PM UTC:
  tests:  2|5
 total_score: 20/70
 752ead7
+Fri 12 Aug 2022 05:02:13 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:27: error: expected ‘;’ before ‘human’
+   62 |   strcpy(human[0].rut,rut)
+      |                           ^
+      |                           ;
+   63 |   human[0].edad=edad
+      |   ~~~~~                    
+exercises.c:65:1: error: control reaches end of non-void function [-Werror=return-type]
+   65 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ceaf2ce
