@@ -318,3 +318,14 @@ Fri 12 Aug 2022 01:15:22 PM UTC:
  tests:  2|5
 total_score: 20/70
 08c95e0
+Fri 12 Aug 2022 01:16:23 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:7: error: unused variable ‘c’ [-Werror=unused-variable]
+   40 |   int c=n-m;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+6edc3f5
