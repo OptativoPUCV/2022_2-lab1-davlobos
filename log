@@ -179,3 +179,16 @@ Fri 12 Aug 2022 01:01:29 PM UTC:
  tests:  1|6
 total_score: 10/70
 9b36063
+Fri 12 Aug 2022 01:02:24 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaNultimos’:
+exercises.c:40:9: error: too many arguments to function ‘sumaN’
+   40 |   *suma=sumaN(a,m,n);
+      |         ^~~~~
+exercises.c:21:5: note: declared here
+   21 | int sumaN(int a[], int N) {
+      |     ^~~~~
+Compilation failed
+00b3722
