@@ -612,3 +612,36 @@ exercises.c:61:14: error: ‘h[0]’ is used uninitialized in this function [-We
 cc1: all warnings being treated as errors
 Compilation failed
 c69eac8
+Fri 12 Aug 2022 05:15:25 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:3: error: too few arguments to function ‘strcpy’
+   61 |   strcpy(h[0]->nombre);
+      |   ^~~~~~
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/features.h:473,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:62:3: error: too few arguments to function ‘strcpy’
+   62 |   strcpy(h[0]->rut);
+      |   ^~~~~~
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/features.h:473,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/libc-header-start.h:33,
+                 from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:27,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/string_fortified.h:77:1: note: declared here
+   77 | __NTH (strcpy (char *__restrict __dest, const char *__restrict __src))
+      | ^~~~~
+In file included from test.c:5:
+exercises.c:63:7: error: statement with no effect [-Werror=unused-value]
+   63 |   h[0]->edad;
+      |   ~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d563da2
