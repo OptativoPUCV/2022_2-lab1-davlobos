@@ -589,3 +589,26 @@ exercises.c:63:7: error: ‘h[0]’ is a pointer; did you mean to use ‘->’?
       |       ->
 Compilation failed
 cc99741
+Fri 12 Aug 2022 05:15:01 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+test.c: In function ‘crearPersona’:
+exercises.c:61:11: error: ‘h[0]’ is used uninitialized in this function [-Werror=uninitialized]
+   61 |   strcpy(h[0]->nombre,nombre);
+      |          ~^~~
+exercises.c:62:11: error: ‘h[0]’ is used uninitialized in this function [-Werror=uninitialized]
+   62 |   strcpy(h[0]->rut,rut);
+      |          ~^~~
+exercises.c:63:4: error: ‘h[0]’ is used uninitialized in this function [-Werror=uninitialized]
+   63 |   h[0]->edad=edad;
+      |   ~^~~
+exercises.c:65:10: error: ‘h[0]’ is used uninitialized in this function [-Werror=uninitialized]
+   65 |   return *h;
+      |          ^~
+exercises.c:61:14: error: ‘h[0]’ is used uninitialized in this function [-Werror=uninitialized]
+   61 |   strcpy(h[0]->nombre,nombre);
+      |          ~~~~^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c69eac8
