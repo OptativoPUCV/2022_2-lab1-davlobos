@@ -368,3 +368,14 @@ exercises.c:61:10: error: returning ‘int *’ from a function with incompatibl
 cc1: all warnings being treated as errors
 Compilation failed
 2b24ee7
+Fri 12 Aug 2022 01:22:29 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:10: error: returning ‘char *’ from a function with incompatible return type ‘Persona *’ [-Werror=incompatible-pointer-types]
+   61 |   return a;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+3076adc
