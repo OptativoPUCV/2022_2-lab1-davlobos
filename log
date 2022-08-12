@@ -495,3 +495,26 @@ exercises.c:63:3: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 5289da5
+Fri 12 Aug 2022 05:08:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:61:3: error: statement with no effect [-Werror=unused-value]
+   61 |   human->nombre;
+      |   ^~~~~
+exercises.c:62:3: error: statement with no effect [-Werror=unused-value]
+   62 |   human->rut;
+      |   ^~~~~
+exercises.c:63:3: error: statement with no effect [-Werror=unused-value]
+   63 |   &human->edad;
+      |   ^~~~~~~~~~~~
+exercises.c:64:10: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   64 |   return *human;
+      |          ^~~~~~
+exercises.c:65:1: error: control reaches end of non-void function [-Werror=return-type]
+   65 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+55d7463
