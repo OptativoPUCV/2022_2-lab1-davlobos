@@ -467,3 +467,14 @@ exercises.c:64:10: error: function returns address of local variable [-Werror=re
 cc1: all warnings being treated as errors
 Compilation failed
 1482cf3
+Fri 12 Aug 2022 05:03:32 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:10: error: function returns address of local variable [-Werror=return-local-addr]
+   64 |   return human;
+      |          ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a7dea0f
