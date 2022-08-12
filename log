@@ -21,3 +21,16 @@ Fri 12 Aug 2022 12:35:58 PM UTC:
  tests:  1|6
 total_score: 10/70
 03d7a77
+Fri 12 Aug 2022 12:40:24 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaN’:
+exercises.c:26:13: error: expected ‘;’ before ‘tot’
+   26 |       a[i]=i
+      |             ^
+      |             ;
+   27 |       tot += a[i];
+      |       ~~~    
+Compilation failed
+119d7a0
