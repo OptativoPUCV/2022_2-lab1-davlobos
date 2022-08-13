@@ -858,3 +858,17 @@ In function ‘strcpy’,
 cc1: all warnings being treated as errors
 Compilation failed
 399aba4
+Sat 13 Aug 2022 04:06:26 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:63:10: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   63 |   return *h;
+      |          ^~
+exercises.c:64:1: error: control reaches end of non-void function [-Werror=return-type]
+   64 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+ca399a7
