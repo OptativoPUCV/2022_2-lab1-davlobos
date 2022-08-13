@@ -701,3 +701,17 @@ exercises.c:63:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 16a6d45
+Sat 13 Aug 2022 03:55:07 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:10: error: incompatible types when returning type ‘Persona’ but ‘Persona *’ was expected
+   62 |   return *h;
+      |          ^~
+exercises.c:63:1: error: control reaches end of non-void function [-Werror=return-type]
+   63 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+009ba39
