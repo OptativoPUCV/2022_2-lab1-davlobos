@@ -1987,3 +1987,30 @@ exercises.c:107:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 03901c2
+Sat 13 Aug 2022 07:01:15 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:96:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   96 |   *v[i]=valor;
+      |   ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:9: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  106 |   valor=*v[i];
+      |         ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:116:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  116 |   *c=*a+*b
+      |      ~~^~~
+      |      |  |
+      |      |  Vector
+      |      Vector
+exercises.c:116:11: error: expected ‘;’ before ‘}’ token
+  116 |   *c=*a+*b
+      |           ^
+      |           ;
+  117 | }
+      | ~          
+Compilation failed
+1893e2c
