@@ -58,7 +58,7 @@ typedef struct {
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
   
-  Persona* h=(Persona*)malloc(3*sizeof(Persona));
+  Persona* h=(Persona*)malloc(sizeof(Persona));
   strcpy(h->nombre,nombre);
   strcpy(h->rut,rut);
   h->edad=edad;
