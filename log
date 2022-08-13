@@ -2014,3 +2014,24 @@ exercises.c:116:11: error: expected ‘;’ before ‘}’ token
       | ~          
 Compilation failed
 1893e2c
+Sat 13 Aug 2022 07:01:53 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:96:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   96 |   *v[i]=valor;
+      |   ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:9: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  106 |   valor=*v[i];
+      |         ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:116:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  116 |   *c=*a+*b;
+      |      ~~^~~
+      |      |  |
+      |      |  Vector
+      |      Vector
+Compilation failed
+ac2c980
