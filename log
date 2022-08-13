@@ -1054,3 +1054,20 @@ exercises.c:104:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 ccfe17d
+Sat 13 Aug 2022 04:23:03 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:105:7: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  105 |   *c=a+b;
+      |       ^
+exercises.c:106:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  106 |   return c;
+      |          ^
+exercises.c:104:6: note: declared here
+  104 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |      ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+52151cf
