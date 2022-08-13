@@ -1233,3 +1233,37 @@ exercises.c:92:8: error: incompatible types when assigning to type ‘Vector’ 
 cc1: all warnings being treated as errors
 Compilation failed
 4beb5df
+Sat 13 Aug 2022 04:52:02 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:64:10: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   64 |   h->edad,&edad;
+      |          ^
+exercises.c:64:10: error: statement with no effect [-Werror=unused-value]
+exercises.c: In function ‘crearVector’:
+exercises.c:82:22: error: too few arguments to function ‘calloc’
+   82 |   Vector* s=(Vector*)calloc(n*sizeof(int));
+      |                      ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:14: note: declared here
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:92:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int *’
+   92 |   v[i]=&valor;
+      |        ^
+exercises.c: In function ‘obtenerValor’:
+exercises.c:101:3: error: ‘valor’ undeclared (first use in this function); did you mean ‘valloc’?
+  101 |   valor=&v[i];
+      |   ^~~~~
+      |   valloc
+exercises.c:101:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:103:1: error: control reaches end of non-void function [-Werror=return-type]
+  103 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9d51b77
