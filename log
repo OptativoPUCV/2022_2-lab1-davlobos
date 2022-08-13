@@ -1919,3 +1919,34 @@ exercises.c:106:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 ff86034
+Sat 13 Aug 2022 07:00:12 PM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:96:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   96 |   *v[i]=valor;
+      |   ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:105:3: error: ‘valor’ undeclared (first use in this function); did you mean ‘valloc’?
+  105 |   valor=*v[i];
+      |   ^~~~~
+      |   valloc
+exercises.c:105:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:105:9: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  105 |   valor=*v[i];
+      |         ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:115:8: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  115 |   *c=*a+*b;
+      |      ~~^~~
+      |      |  |
+      |      |  Vector
+      |      Vector
+exercises.c: In function ‘obtenerValor’:
+exercises.c:107:1: error: control reaches end of non-void function [-Werror=return-type]
+  107 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+e9f3afc
