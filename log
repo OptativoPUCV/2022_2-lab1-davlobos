@@ -1659,3 +1659,47 @@ exercises.c:106:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 dc0b5a1
+Sat 13 Aug 2022 06:42:06 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:10: error: initialization of ‘int *’ from incompatible pointer type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   83 |   int* s=(Vector*)malloc(sizeof(Vector));
+      |          ^
+exercises.c:84:4: error: request for member ‘datos’ in something not a structure or union
+   84 |   s->datos=(Vector*)calloc(n,sizeof(int))
+      |    ^~
+exercises.c:84:42: error: expected ‘;’ before ‘s’
+   84 |   s->datos=(Vector*)calloc(n,sizeof(int))
+      |                                          ^
+      |                                          ;
+   85 |   s->capacidad=n;
+      |   ~                                       
+exercises.c:86:10: error: returning ‘int *’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   86 |   return s;
+      |          ^
+exercises.c: In function ‘asignarValor’:
+exercises.c:95:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int *’
+   95 |   v[i]=&valor;
+      |        ^
+exercises.c: In function ‘obtenerValor’:
+exercises.c:104:3: error: ‘valor’ undeclared (first use in this function); did you mean ‘valloc’?
+  104 |   valor=&v[i];
+      |   ^~~~~
+      |   valloc
+exercises.c:104:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘sumaV’:
+exercises.c:115:15: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  115 |     c[i]=&a[i]+&b[i];
+      |          ~~~~~^~~~~~
+      |          |     |
+      |          |     Vector *
+      |          Vector *
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:1: error: control reaches end of non-void function [-Werror=return-type]
+  106 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+c934448
