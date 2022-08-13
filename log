@@ -1071,3 +1071,17 @@ exercises.c:104:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 52151cf
+Sat 13 Aug 2022 04:23:14 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:106:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  106 |   return c;
+      |          ^
+exercises.c:104:6: note: declared here
+  104 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |      ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+efda7ab
