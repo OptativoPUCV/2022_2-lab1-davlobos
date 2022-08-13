@@ -57,6 +57,7 @@ typedef struct {
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
+  
   return NULL;
 }
 
@@ -74,9 +75,10 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector* a=(Vector*)calloc(n,sizeof(int));
+  Vector* s;
+  s=(Vector*)calloc(n*sizeof(int));
   
-  return a;
+  return s;
 }
 
 /*
@@ -102,8 +104,7 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-  
-  return c;
+
 }
 
 /*

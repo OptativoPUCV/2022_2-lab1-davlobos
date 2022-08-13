@@ -1085,3 +1085,17 @@ exercises.c:104:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 efda7ab
+Sat 13 Aug 2022 04:27:32 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:79:14: error: too few arguments to function ‘calloc’
+   79 |   s=(Vector*)calloc(n*sizeof(int));
+      |              ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:14: note: declared here
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+Compilation failed
+c168735
