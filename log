@@ -1467,3 +1467,40 @@ exercises.c:104:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 94413b9
+Sat 13 Aug 2022 06:31:13 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:22: error: too few arguments to function ‘calloc’
+   83 |   Vector* s=(Vector*)calloc(n*sizeof(int));
+      |                      ^~~~~~
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:542:14: note: declared here
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |              ^~~~~~
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:93:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int *’
+   93 |   v[i]=&valor;
+      |        ^
+exercises.c: In function ‘obtenerValor’:
+exercises.c:102:3: error: ‘valor’ undeclared (first use in this function); did you mean ‘valloc’?
+  102 |   valor=&v[i];
+      |   ^~~~~
+      |   valloc
+exercises.c:102:3: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c: In function ‘sumaV’:
+exercises.c:113:15: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  113 |     c[i]=&a[i]+&b[i];
+      |          ~~~~~^~~~~~
+      |          |     |
+      |          |     Vector *
+      |          Vector *
+exercises.c: In function ‘obtenerValor’:
+exercises.c:104:1: error: control reaches end of non-void function [-Werror=return-type]
+  104 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+f9dbec9
