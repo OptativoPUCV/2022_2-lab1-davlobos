@@ -1034,3 +1034,23 @@ Sat 13 Aug 2022 04:19:24 PM UTC:
  tests:  2|5
 total_score: 20/70
 9f86814
+Sat 13 Aug 2022 04:22:16 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:105:8: error: invalid operands to binary + (have ‘Vector **’ and ‘Vector **’)
+  105 |   *c=&a+&b;
+      |      ~~^~~
+      |      |  |
+      |      |  Vector **
+      |      Vector **
+exercises.c:106:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  106 |   return c;
+      |          ^
+exercises.c:104:6: note: declared here
+  104 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |      ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ccfe17d
