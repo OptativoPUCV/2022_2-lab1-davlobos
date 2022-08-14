@@ -2067,3 +2067,28 @@ exercises.c:125:15: error: invalid type argument of unary ‘*’ (have ‘int�
 cc1: all warnings being treated as errors
 Compilation failed
 302fbd5
+Sun 14 Aug 2022 05:39:19 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:96:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   96 |   *v[i]=valor;
+      |   ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:9: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  106 |   valor=*v[i];
+      |         ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:116:9: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  116 |   *c=*(a+b);
+      |         ^
+exercises.c: In function ‘sumaV2’:
+exercises.c:125:6: error: invalid type argument of unary ‘*’ (have ‘int’)
+  125 |   *c=*(a1+b1)+*(a2+b2);
+      |      ^~~~~~~~
+exercises.c:125:15: error: invalid type argument of unary ‘*’ (have ‘int’)
+  125 |   *c=*(a1+b1)+*(a2+b2);
+      |               ^~~~~~~~
+Compilation failed
+6793bee
