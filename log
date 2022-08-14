@@ -2110,3 +2110,28 @@ exercises.c:116:9: error: invalid operands to binary + (have ‘Vector *’ and 
       |         ^
 Compilation failed
 f5b29c4
+Sun 14 Aug 2022 05:43:25 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:96:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   96 |   *v[i]=valor;
+      |   ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:9: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  106 |   valor=*v[i];
+      |         ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:116:9: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  116 |   *c=*(a+b);
+      |         ^
+exercises.c: In function ‘sumaV2’:
+exercises.c:125:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  125 |   *c[0]=a1+a2;
+      |   ^~~~~
+exercises.c:126:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  126 |   *c[1]=b1+b2;
+      |   ^~~~~
+Compilation failed
+3d79083
