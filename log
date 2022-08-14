@@ -2215,3 +2215,14 @@ exercises.c:125:3: error: invalid type argument of unary ‘*’ (have ‘Vector
       |   ^~~~~
 Compilation failed
 32eeac3
+Sun 14 Aug 2022 06:13:30 PM UTC: 
+ exercises.c | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:131:8: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  131 |     if(i=0){
+      |        ^
+cc1: all warnings being treated as errors
+Compilation failed
+4f1c96d
