@@ -81,7 +81,7 @@ typedef struct {
 
 Vector * crearVector(int n) {
   
-  Vector* s=(Vector*)malloc(sizeof(Vector));
+  Vector* s = malloc(sizeof(Vector));
   s->capacidad=n;
   s->datos=(int*)calloc(n,sizeof(int));
   return s;
@@ -119,8 +119,8 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
 /*
 Ejercicio 8.
 Use las operaciones implementadas de vectores para 
-sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
+sumar (a1,a2)+(b1,b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-  *c=*(a1+b1)+*(a2+b2);
+  
 }
