@@ -2035,3 +2035,35 @@ exercises.c:116:8: error: invalid operands to binary + (have ‘Vector’ and �
       |      Vector
 Compilation failed
 ac2c980
+Sun 14 Aug 2022 05:38:16 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:96:3: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+   96 |   *v[i]=valor;
+      |   ^~~~~
+exercises.c: In function ‘obtenerValor’:
+exercises.c:106:9: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  106 |   valor=*v[i];
+      |         ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:116:9: error: invalid operands to binary + (have ‘Vector *’ and ‘Vector *’)
+  116 |   *c=*(a+b);
+      |         ^
+exercises.c: In function ‘sumaV2’:
+exercises.c:125:10: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  125 |   *c=*(a1,a2)+*(b1,b2);
+      |          ^
+exercises.c:125:6: error: invalid type argument of unary ‘*’ (have ‘int’)
+  125 |   *c=*(a1,a2)+*(b1,b2);
+      |      ^~~~~~~~
+exercises.c:125:19: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+  125 |   *c=*(a1,a2)+*(b1,b2);
+      |                   ^
+exercises.c:125:15: error: invalid type argument of unary ‘*’ (have ‘int’)
+  125 |   *c=*(a1,a2)+*(b1,b2);
+      |               ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+302fbd5
